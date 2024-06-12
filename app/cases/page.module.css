@@ -1,0 +1,31 @@
+.button {
+    font-family: "Fira Sans";
+    text-align: center;
+    background-color: #FFD600;
+    color: #000000;
+    border: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+        background-color: #fff111;
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.maticon {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    fill: #FFD600;
+    color: #FFD600;
+}

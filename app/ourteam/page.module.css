@@ -106,9 +106,9 @@
     align-items: center;
 }
 
-/* mat-icon {
+.maticon {
     font-size: 2rem;
     height: 2rem;
     width: 2rem;
     color: #FFD600;
-} */
+}

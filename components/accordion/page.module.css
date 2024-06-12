@@ -1,0 +1,91 @@
+.wrapper {
+    margin: 0 auto;
+    text-align: left;
+    margin-top: 1rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    @media screen and (min-width: 768px) {
+        width: 770px;
+    }
+}
+
+.tab {
+    position: relative;
+    margin-bottom: 1px;
+    width: 100%;
+    color: #fff;
+    overflow: hidden;
+}
+
+.tab input {
+    position: absolute;
+    opacity: 0;
+    z-index: -1;
+}
+
+.tab label {
+    position: relative;
+    display: block;
+    padding: 0 0 0 1em;
+    background: #16a085;
+    line-height: 3;
+    cursor: pointer;
+}
+
+.blue label {
+    background: #787872;
+}
+
+.tabContent {
+    max-height: 0;
+    overflow: hidden;
+    background: #1abc9c;
+    -webkit-transition: max-height 0.35s;
+    -o-transition: max-height 0.35s;
+    transition: max-height 0.35s;
+}
+
+.blue .tabContent {
+    background: #FFD600;
+}
+
+.tabContent p {
+    color: #6C665A;
+    margin: 1em;
+}
+
+/* :checked */
+.tab input:checked~.tabContent {
+    max-height: 100vh;
+}
+
+/* Icon */
+.tab label::after {
+    position: absolute;
+    right: 0;
+    top: 0;
+    display: block;
+    width: 3em;
+    height: 3em;
+    line-height: 3;
+    text-align: center;
+    -webkit-transition: all 0.35s;
+    -o-transition: all 0.35s;
+    transition: all 0.35s;
+}
+
+.tab input[type="checkbox"]+label::after {
+    content: "+";
+}
+
+.tab input[type="radio"]+label::after {
+    content: "\25BC";
+}
+
+.tab input[type="checkbox"]:checked+label::after {
+    transform: rotate(315deg);
+}
+
+.tab input[type="radio"]:checked+label::after {
+    transform: rotateX(180deg);
+}
