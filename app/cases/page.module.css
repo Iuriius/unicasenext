@@ -22,10 +22,22 @@
     align-items: center;
 }
 
-.maticon {
-    font-size: 2rem;
-    height: 2rem;
-    width: 2rem;
-    fill: #FFD600;
-    color: #FFD600;
+.cardscontainer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: flex-start;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    background-image: url(../../public/crossword.png);
+    width: 250px;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }

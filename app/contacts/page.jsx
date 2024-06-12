@@ -51,12 +51,12 @@ export default function Contacts() {
                         <Image className={styles.icon} src="telegram.svg" alt="telegram" width={48} height={48} />
                     </a>
                 </div>
-                <div class="vibermob">
+                <div className="vibermob">
                     <a className={styles.a} href="viber://add?number=%2B380935378674" target="_blank">
                         <Image className={styles.icon} src="viber.svg" alt="viber" width={48} height={48} />
                     </a>
                 </div>
-                <div class="viberdesk">
+                <div className="viberdesk">
                     <a className={styles.a} href="viber://chat?number=%2B380935378674" target="_blank">
                         <Image className={styles.icon} src="viber.svg" alt="viber" width={48} height={48} />
                     </a>
