@@ -1,0 +1,114 @@
+.h2 {
+    text-align: center;
+}
+
+.h3 {
+    text-align: center;
+    margin: 0.5rem 0;
+
+    @media screen and (min-width: 768px) {
+        font-weight: 900;
+        font-size: large;
+    }
+}
+
+.h4 {
+    text-align: center;
+    color: #6C665A;
+    font-weight: 400;
+    margin: 0;
+    padding: 0;
+}
+
+.h5 {
+    text-align: center;
+    color: #6C665A;
+    font-family: "Fira Sans";
+    font-weight: 400;
+    margin: 0.5 rem 0 0 0;
+
+    @media screen and (min-width: 768px) {
+        font-size: larger;
+    }
+}
+
+.hr {
+    display: none;
+
+    @media screen and (min-width: 768px) {
+        display: block;
+        ;
+    }
+}
+
+.photoAndDescr {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f1e6;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row;
+    }
+}
+
+.photoAndDescrRev {
+    margin: 1rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #f2f1e6;
+
+    @media screen and (min-width: 768px) {
+        flex-direction: row-reverse;
+    }
+}
+
+.description {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+.photo {
+    width: 280px;
+    height: auto;
+    background-color: #FFD600;
+    padding: 10px;
+}
+
+.button {
+    font-family: "Fira Sans";
+    text-align: center;
+    background-color: #FFD600;
+    color: #000000;
+    border: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+        background-color: #fff111;
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* mat-icon {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    color: #FFD600;
+} */

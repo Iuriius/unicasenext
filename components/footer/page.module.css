@@ -1,0 +1,25 @@
+.contentwrapper {
+    background-color: #000000;
+    width: 100%;
+
+}
+
+.footerlogo {
+    width: 200px;
+    height: auto;
+    padding-top: 0.5rem;
+
+    @media screen and (min-width: 1200px) {
+        width: 300px;
+    }
+}
+
+.confidentiallink {
+    color: #FFD600;
+    margin: 0;
+}
+
+.footertel {
+    color: white;
+    margin: 0;
+}

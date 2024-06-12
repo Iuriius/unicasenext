@@ -1,0 +1,140 @@
+.a {
+    font-family: "Fira Sans";
+    text-decoration: none;
+    color: #6C665A;
+    display: flex;
+    align-items: center;
+
+    &:hover,
+    &:focus {
+        cursor: pointer;
+        color: #FFD600;
+    }
+}
+
+.iframe {
+    width: 300px;
+    margin-bottom: 1rem;
+
+    @media screen and (min-width: 768px) {
+        width: 700px;
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 1180px;
+        height: 500px;
+    }
+}
+
+.maticon {
+    font-size: 2rem;
+    height: 2rem;
+    width: 2rem;
+    color: #FFD600;
+}
+
+.icon {
+    width: 48px;
+    height: auto;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+
+    &:hover,
+    &:focus {
+        transform: scale(1.1);
+    }
+}
+
+.flexcontacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.flexsocials {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.quickaccess {
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    align-content: center;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.phoneandmail {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    border: 0.5rem solid #FFD600;
+    padding-bottom: 1rem;
+    flex-wrap: wrap;
+    background-image: url(../../public/hammer.webp);
+    background-size: cover;
+    background-position: center;
+}
+
+.flex {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+}
+
+.contactlink {
+    text-align: center;
+}
+
+.flexContactlink {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.button {
+    font-family: "Fira Sans";
+    text-align: center;
+    background-color: #FFD600;
+    color: #000000;
+    border: none;
+    padding: 1rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+    cursor: pointer;
+
+    &:hover,
+    &:focus-visible {
+        background-color: #fff111;
+    }
+}
+
+.buttonWrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.vibermob {
+    display: block;
+
+    @media screen and (min-width: 1200px) {
+        display: none;
+    }
+}
+
+.viberdesk {
+    display: none;
+
+    @media screen and (min-width: 1200px) {
+        display: block;
+    }
+}
